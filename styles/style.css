@@ -256,6 +256,76 @@
         }
 
 
+        /* ========================== 
+             Media Queries
+            ============================ */
+
+        /* ----------- Mobile Device -------- */
+
+        @media only screen and (max-width:688px) {
+            /* -------- header query ------- */
+            .heading-bg:hover #bucket {
+                display: none;
+            }
+            .heading-area{
+                flex-direction: column;
+                justify-content: center;
+                padding: 90px 150px;
+            }
+            .heading-title h1{
+                width: 362px;
+                font-size: 48px;
+            }
+            .heading-banner img {
+                width: 373px;
+                height: 328px;
+                padding: 40px 0;
+                margin-left: 0;
+            }
+
+            /* ---------- player content query --------- */
+            .players{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            /* ---------- football legends query ----------- */
+            .legend img{
+                width: 200px;
+                height: 200px;
+            }
+            .quotes{
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            .responsive-sizing{
+                margin-left: 10px;
+            }
+            /* ----------- tournament highlights query ---------- */
+            .container{
+                flex-direction: column;
+                align-items: center;
+            }
+            .container-text{
+                width: 370px;
+            }
+            .container-image img{
+                width: 375px;
+                height: 345px;
+                margin-right: 67px;
+                margin-top: 57px;
+            }
+
+            /* --------- footer query ------ */
+            .footer-images img {
+                width: 335px;
+                height: 100px;
+            }
+
+            .footer-area{
+                background-size: 25% 40%;
+            }
+        }
+
+
 
 
     
