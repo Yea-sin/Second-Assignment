@@ -16,6 +16,12 @@
         font-size: 16px;
         text-decoration: none;
         color: #ffff;
+        transition: all linear 0.8s;
+   }
+   .button:hover{
+       background: #ffff;
+       color: #000000;
+       border: 1px solid;
    }
    .button i{
         width: 24px;
