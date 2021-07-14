@@ -1,5 +1,5 @@
 /* =================
-    Common Css 
+    Common Css Styles
    =================*/
    body{
        margin: 0;
@@ -33,42 +33,6 @@
     ======================== */
 
     @keyframes bounce {
-        /* 0%{
-            top: 200px;
-            left: 0;
-            transform: rotate(360deg);
-        }
-        25%{
-            left: 30%;
-            top: 410px;
-        }
-        35%{
-            top: 350px;
-            left: 35%;
-        }
-        45%{
-            top: 410px;
-            left: 45%;
-        }
-        
-        55%{
-            top: 350px;
-            left: 50%;
-        }
-        65%{
-            top: 410px;
-            left: 65%;
-        }
-        70%{
-            top: 350px;
-            left: 75%;
-        }
-        100%{
-            top: 260px;
-            left: 90%;
-            opacity: 0.4;
-            transform: scale(0.75);
-        } */
         0%{
             top: 158px;
             left: 655px;
@@ -92,7 +56,7 @@
         }
     }
 
-    /* ---------Heading area----------- */
+    /* ---------Heading Styles----------- */
 
     .heading-bg{
         background: #2D25A0;
@@ -145,7 +109,7 @@
     }
     
     /* ============================= 
-         Players Content Area
+         Players Content Styles
      ==============================*/
      .container{
          display: flex;
@@ -177,7 +141,49 @@
      }
 
      /* ==============================
-       tournament highlights content area
+         Football legend Styles
+         ============================= */
+         .legends-area{
+             display: flex;
+             flex-direction: column;
+             background: #5a7980;
+             margin-top: 100px;
+             border-radius: 15px;
+         }
+         .content{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+
+         .legend img{
+             width: 300px;
+             height: 256px;
+             border-radius: 10px;
+         }
+         .legend figcaption{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            text-align: left;
+            font-style: italic;
+         }
+         .quotes{
+             display: flex;
+             align-items: center;
+             background: #b5d8e0;
+             width: 50%;
+             height: 25%;
+             border-radius: 10px;
+         }
+         .quotes img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 12px;
+         }
+
+     /* ==============================
+       tournament highlights content Styles
        ================================== */
        
        .container-text{
@@ -189,6 +195,9 @@
           font-size: 48px;
           color: #0A0826;
        }
+       .container-text > p{
+           margin-bottom: 26px;
+       }
        .container-image{
            margin-left: 66px;
        }
@@ -198,7 +207,7 @@
        }
 
        /* ===================
-            Footer Area
+            Footer Styles
         ===================== */
         footer{
             background: url(..//images/footer-bg.jpg);
@@ -245,6 +254,8 @@
             font-size: 18px;
             color: #000000;
         }
+
+
 
 
     
