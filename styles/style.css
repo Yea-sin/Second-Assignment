@@ -4,9 +4,22 @@
    body{
        margin: 0;
    }
-   a{
-       text-decoration: none;
-       color: #ffff;
+   p{
+       font-family: 'Libre Franklin', sans-serif;
+       font-size: 16px;
+       color: #6C6C6C;
+   }
+   .button {
+        background: #E02C6D;
+        padding: 10px 24px;
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        color: #ffff;
+   }
+   .button i{
+        width: 24px;
+        height: 24px;
    }
 
    /* =============
@@ -20,26 +33,62 @@
     ======================== */
 
     @keyframes bounce {
-        0%{
-            top: 0;
+        /* 0%{
+            top: 200px;
             left: 0;
             transform: rotate(360deg);
         }
         25%{
-            left: 25%;
+            left: 30%;
             top: 410px;
         }
-        50%{
-            top: 0;
+        35%{
+            top: 350px;
+            left: 35%;
+        }
+        45%{
+            top: 410px;
+            left: 45%;
+        }
+        
+        55%{
+            top: 350px;
             left: 50%;
         }
-        75%{
+        65%{
             top: 410px;
+            left: 65%;
+        }
+        70%{
+            top: 350px;
             left: 75%;
         }
         100%{
-            top: 0;
+            top: 260px;
             left: 90%;
+            opacity: 0.4;
+            transform: scale(0.75);
+        } */
+        0%{
+            top: 158px;
+            left: 655px;
+        }
+        50%{
+            top: 550px;
+            left: 860px;
+        }
+        100%{
+            top: 245px;
+            left: 1200px;
+        }
+
+    }
+    @keyframes bucket {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
         }
     }
 
@@ -48,39 +97,45 @@
     .heading-bg{
         background: #2D25A0;
         width: 100%;
-        height: 550px;
     }
-    .heading-bg:hover #bounce-ball{
-        animation: bounce 3s linear infinite alternate;
-        visibility: visible;
-    }
-    #bounce-ball{
+    
+    .animation-items #bounce-ball{
         width: 150px;
         height: 150px;
         position:absolute;
-        opacity: 0.5;
-        visibility: hidden;
+        top: 158px;
+        left: 655px;
+        opacity: 0.8;
+        transform: scale(0.55);
+        opacity: 0.8;
+        visibility:hidden ;
+    }
+    .heading-bg:hover #bounce-ball{
+        animation: bounce 3s linear  infinite alternate;
+        visibility:visible ;
+    }
+    .animation-items #bucket{
+        position: absolute;
+        right: 0;
+        top: 210px;
+        transform: rotate(236deg) scale(0.65);
+        opacity: 0;
+    }
+    .heading-bg:hover #bucket{
+        animation: bucket 3s linear 3s infinite alternate;
     }
     .heading-area{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 80px 150px;
+        height: 500px
     }
     .heading-title h1{
         font-family: 'Poppins', sans-serif;
         font-size: 64px;
         color: #ffff;
         width: 490px;
-    }
-    .heading-title a{
-        background: #E02C6D;
-        padding: 10px 24px;
-        font-family: 'Libre Franklin', sans-serif;
-        font-size: 16px;
-    }
-    .heading-title a i{
-        width: 24px;
-        height: 24px;
     }
 
     .heading-banner img{
@@ -89,6 +144,107 @@
         margin-left: 50px;
     }
     
+    /* ============================= 
+         Players Content Area
+     ==============================*/
+     .container{
+         display: flex;
+         justify-content: center;
+         margin-top: 150px;
+     }
+     .players{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 27px 30px;
+     }
+     .player{
+        background: #ffff;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        width: 300px;
+        height: 450px;
+        padding: 15px;
+     }
+
+     .player h1{
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        color: #18191F;
+     }
+
+     .player img{
+         width: 300px;
+         height: 256px;
+     }
+
+     /* ==============================
+       tournament highlights content area
+       ================================== */
+       
+       .container-text{
+           width: 442px;
+       }
+
+       .container-text h1{
+          font-family: 'Poppins', sans-serif;
+          font-size: 48px;
+          color: #0A0826;
+       }
+       .container-image{
+           margin-left: 66px;
+       }
+       .container-image img{
+           width: 567px;
+           height: 427px;
+       }
+
+       /* ===================
+            Footer Area
+        ===================== */
+        footer{
+            background: url(..//images/footer-bg.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+        }
+        .footer-area{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 150px;
+            padding-top: 30px;
+            background: url(..//images/footer-left-bg.png);
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 40% 90%
+        }
+
+        .footer-images img{
+            width: 483px;
+            height: 110px;
+        }
+        .footer-text{
+            text-align: center;
+            margin: 20px;
+        }
+        .footer-text a{
+            padding-right: 10px;
+        }
+        .footer-text a i{
+            width: 32px;
+            height: 32px;
+            background: #E7E7E8;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            color:#000000;
+            border: 1px solid;
+        }
+        .footer-text p{
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 18px;
+            color: #000000;
+        }
 
 
     
